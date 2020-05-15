@@ -51,7 +51,7 @@ function App() {
             </Col>
           </Row>
           <Row>
-            <Col xl={6} lg={6} md={6} sm={6}>
+            <Col xl={12} lg={12} md={12} sm={12}>
               <Row>
                 <p id="p-information"><b>Lise:</b> Tekirdağ Anadolu Lisesi</p>
               </Row>
