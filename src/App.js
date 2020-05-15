@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
-import { Container, Row, Col  } from "react-bootstrap";
+import { Container, Row, Col, OverlayTrigger, Tooltip } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import profilePicture from "./images/ProfilePicture.png";
+import qrCode from "./images/QRCode.png";
 
 function App() {
   return (
@@ -79,6 +80,13 @@ function App() {
                   <b>Ziraat Finans Uygulaması Projesi</b> ekibinde  React kullanarak web önyüz ve komponent projelerinde görevler alındı. Kısa süreli backend projelerinde de görevler alındı. Kullanılan Teknolojiler önyüz geliştirmelerinde Javascript, React, Redux, Mobx, React Hooks, CSS, HTML, test kodu geliştirmelerinde jest ve enzyme, paket kontrolllerinde Git ve NPM, backend projelerinde Go ve C#
                 </p>
               </Row>
+            </Col>
+          </Row>
+          <Row>
+            <Col xl={12} lg={12} md={12} sm={12}>
+            <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">CV yi online görüntülemek için taratabilirsiniz</Tooltip>}>
+              <img id="qr-code" src={qrCode} alt="CV yi online görüntülemek için taratabilirsiniz" />
+             </OverlayTrigger>
             </Col>
           </Row>
           </Container>
