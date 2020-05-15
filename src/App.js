@@ -76,7 +76,7 @@ function App() {
                   <b>Muhasebe</b> Ekibinde windows formlar aile kullanıcı arayüzleri hazırlanması,  schedule batch hazırlanması ve mvc web api uygulamaları ile diğer ekiplerle entegrasyon. Kullanılan Teknolojiler C#, Oracle, MVC Web Api
                 </p>
                 <p id="p-information">
-                  <b>Ziraat Finans Uygulaması Projesi</b> ekibinde  React kullanarak web önyüz ve komponent projelerinde görevler alındı. Kısa süreli backend projelerinde de görevler alındı. Kullanılan Teknolojiler Javascript, React, Redux, Mobx, React Hooks, CSS, HTML, paket kontrolllerinde Git ve NPM, backend projelerinde Go ve C#
+                  <b>Ziraat Finans Uygulaması Projesi</b> ekibinde  React kullanarak web önyüz ve komponent projelerinde görevler alındı. Kısa süreli backend projelerinde de görevler alındı. Kullanılan Teknolojiler önyüz geliştirmelerinde Javascript, React, Redux, Mobx, React Hooks, CSS, HTML, test kodu geliştirmelerinde jest ve enzyme, paket kontrolllerinde Git ve NPM, backend projelerinde Go ve C#
                 </p>
               </Row>
             </Col>
