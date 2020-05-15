@@ -58,8 +58,29 @@ function App() {
               <Row>
                 <p id="p-information"><b>Üniversite:</b> Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği Bölümü</p>
               </Row>
-              </Col>
-            </Row>
+            </Col>
+          </Row>
+          <Row id="header-row">
+            <Col id="header-information" xl={12} lg={12} md={12} sm={12}>
+              İş Tecrübesi
+            </Col>
+          </Row>
+          <Row>
+            <Col xl={12} lg={12} md={12} sm={12}>
+              <Row>
+                <p id="p-information"><b><a href="https://www.ziraatteknoloji.com/" target="_blank">Ziraat Teknoloji:</a> </b>(6 Ağustos 2012 - )</p>
+                <p id="p-information">
+                  <b>Nakit Yönetimi Tahsilatlar</b> ekibinde webservisler aracışığı ile kurum entegrasyonları, kullanıcı arayüzleri hazırlanması ve Oracle (PlSql) de veri tabanı işlemlerinde görev alınması. Kullanılan Teknolojiler C#, Oracle, Web service
+                </p>
+                <p id="p-information">
+                  <b>Muhasebe</b> Ekibinde windows formlar aile kullanıcı arayüzleri hazırlanması,  schedule batch hazırlanması ve mvc web api uygulamaları ile diğer ekiplerle entegrasyon. Kullanılan Teknolojiler C#, Oracle, MVC Web Api
+                </p>
+                <p id="p-information">
+                  <b>Ziraat Finans Uygulaması Projesi</b> ekibinde  React kullanarak web önyüz ve komponent projelerinde görevler alındı. Kısa süreli backend projelerinde de görevler alındı. Kullanılan Teknolojiler Javascript, React, Redux, Mobx, React Hooks, CSS, HTML, paket kontrolllerinde Git ve NPM, backend projelerinde Go ve C#
+                </p>
+              </Row>
+            </Col>
+          </Row>
           </Container>
       </div>
     </div>
