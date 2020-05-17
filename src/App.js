@@ -4,11 +4,36 @@ import { Container, Row, Col, OverlayTrigger, Tooltip } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import profilePicture from "./images/ProfilePicture.png";
 import qrCode from "./images/QRCode.png";
+import GetAppIcon from '@material-ui/icons/GetApp';
+import GitHubIcon from '@material-ui/icons/GitHub';
+
+const ref = React.createRef();
+
+const pdfGenerator = () => {
+  console.log("test");
+  
+
+}
 
 function App() {
   return (
-    <div className="App">
-        <div id="div-center">
+    <div className="App" ref={ref}>
+      <div id="side-menu">
+        <OverlayTrigger placement="left" overlay={<Tooltip id="tooltip-disabled">Projeyi görüntülemek için tıklayınız</Tooltip>}>
+          <div id="side-menu-element">
+            <a href="https://github.com/EmrahTerzi/cv-app" target="_blank">
+              <GitHubIcon style={{ color: "black" }} fontSize="large"/>
+            </a>
+          </div>
+        </OverlayTrigger>
+        <OverlayTrigger placement="bottom" overlay={<Tooltip id="tooltip-disabled">Projeyi PDF olarak indirmek için tıklayınız</Tooltip>}>
+          <div id="side-menu-element">
+            <GetAppIcon fontSize="large" onClick={() => pdfGenerator()}/>
+          </div>
+        </OverlayTrigger>
+        
+      </div>    
+      <div id="div-center">
           <Container>
           <Row id="header-row">
             <Col id="header-information" xl={12} lg={12} md={12} sm={12}>
