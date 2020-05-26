@@ -6,18 +6,24 @@ import profilePicture from "./images/ProfilePicture.png";
 import qrCode from "./images/QRCode.png";
 import GetAppIcon from '@material-ui/icons/GetApp';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf';
 
-const ref = React.createRef();
-
-const pdfGenerator = () => {
-  console.log("test");
-  
+const htmlToPdf = () => {
+  const htmlToCanvas = document.getElementById("div-center");
+  html2canvas(htmlToCanvas).then(canvas  => {
+    const canvasToImg = canvas.toDataURL("image/png");
+    window.open(canvasToImg);
+    const pdf = new jsPDF();
+    pdf.addImage(canvasToImg, 'JPEG', 10,10,190,200);
+    pdf.save("Emrah_Terzi_CV.pdf");
+  });
 
 }
 
 function App() {
   return (
-    <div className="App" ref={ref}>
+    <div className="App">
       <div id="side-menu">
         <OverlayTrigger placement="left" overlay={<Tooltip id="tooltip-disabled">Projeyi görüntülemek için tıklayınız</Tooltip>}>
           <div id="side-menu-element">
@@ -28,7 +34,7 @@ function App() {
         </OverlayTrigger>
         <OverlayTrigger placement="bottom" overlay={<Tooltip id="tooltip-disabled">Projeyi PDF olarak indirmek için tıklayınız</Tooltip>}>
           <div id="side-menu-element">
-            <GetAppIcon fontSize="large" onClick={() => pdfGenerator()}/>
+            <GetAppIcon fontSize="large" onClick={() => htmlToPdf()}/>
           </div>
         </OverlayTrigger>
         
